@@ -1,18 +1,20 @@
 package com.company.samsalvail.drinkingbuddy;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
-public class PickCategoryActivity extends ActionBarActivity {
+public class PickCategoryActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pick_category);
+
     }
 
     public void pickCategory(final View view){

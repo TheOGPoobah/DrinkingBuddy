@@ -20,8 +20,16 @@
         android:layout_height="wrap_content"
         android:text="Pick"
         android:id="@+id/pick"
+        android:onClick="pickCategory"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="89dp"
-        android:onClick="pickCategory" />
+        android:layout_centerHorizontal="true" />
+
+    <com.andtinder.view.CardContainer
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pick"
+        android:layout_below="@+id/categoryTitle"/>
+
 </RelativeLayout>
