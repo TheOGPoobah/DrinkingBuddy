@@ -24,4 +24,5 @@
         <item name="android:shadowDy">1</item>
         <item name="android:shadowRadius">2</item>
     </style>
+    <string name="title_activity_favourites">FavouritesActivity</string>
 </resources>
