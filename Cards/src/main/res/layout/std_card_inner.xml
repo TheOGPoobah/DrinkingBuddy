@@ -30,7 +30,7 @@
     <ImageView
         android:id="@+id/image"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="350dp"
         android:layout_below="@id/divider_title"
         android:layout_alignWithParentIfMissing="true"
         android:scaleType="centerCrop"

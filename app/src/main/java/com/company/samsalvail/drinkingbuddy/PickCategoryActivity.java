@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 public class PickCategoryActivity extends Activity {
 
@@ -18,7 +17,7 @@ public class PickCategoryActivity extends Activity {
     }
 
     public void pickCategory(final View view){
-        final Intent intent = new Intent(this, PickDrinkActivity.class);
+        final Intent intent = new Intent(this, BeerActivity.class);
         startActivity(intent);
     }
 
