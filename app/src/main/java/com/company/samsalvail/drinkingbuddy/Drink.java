@@ -1,9 +1,11 @@
 package com.company.samsalvail.drinkingbuddy;
 
+import java.io.Serializable;
+
 /**
  * Created by Kamil on 2015-11-26.
  */
-public class Drink {
+public class Drink implements Serializable{
     private int id;
     private String category;
     private String title;

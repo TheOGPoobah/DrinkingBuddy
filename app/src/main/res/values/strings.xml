@@ -25,4 +25,5 @@
         <item name="android:shadowRadius">2</item>
     </style>
     <string name="title_activity_tea">TeaActivity</string>
+    <string name="title_activity_the_drink">TheDrinkActivity</string>
 </resources>

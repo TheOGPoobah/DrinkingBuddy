@@ -58,6 +58,11 @@
             android:label="@string/title_activity_tea"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".TheDrinkActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

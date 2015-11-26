@@ -1,11 +1,14 @@
 package com.company.samsalvail.drinkingbuddy;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -69,6 +72,25 @@ public class BeerActivity extends Activity {
                     //@Override
                     public void onLike() {
                         Toast.makeText(BeerActivity.this, drinks.get(keeper).getTitle() + " liked", Toast.LENGTH_LONG).show();
+                        new AlertDialog.Builder(BeerActivity.this)
+                                .setTitle("Know More")
+                                .setMessage("Do you want to know more about this?")
+                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Drink drinkTmp = drinks.get(keeper);
+                                        Intent intent = new Intent(BeerActivity.this, TheDrinkActivity.class);
+                                        intent.putExtra("drink", drinkTmp);
+                                        startActivity(intent);
+                                    }
+                                })
+                                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        // do nothing
+                                        dialog.cancel();
+                                    }
+                                })
+                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .show();
                     }
 
                     //@Override
