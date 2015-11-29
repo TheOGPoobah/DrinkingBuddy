@@ -12,18 +12,16 @@ public class Drink implements Serializable{
     private String postedBy;
     private String link;
     private String description;
-    private int likes;
-    private int dislikes;
+    private String website;
 
-    Drink(int id, String category, String title, String postedBy, String link, String description, int likes, int dislikes) {
+    Drink(int id, String category, String title, String postedBy, String link, String description, String website) {
         this.id = id;
         this.category = category;
         this.title = title;
         this.postedBy = postedBy;
         this.link = link;
         this.description = description;
-        this.likes = likes;
-        this.dislikes = dislikes;
+        this.website = website;
     }
 
 
@@ -51,21 +49,11 @@ public class Drink implements Serializable{
         return description;
     }
 
-    public int getLikes() {
-        return likes;
+    public String getWebsite() {
+        return website;
     }
 
-    public int getDislikes() {
-        return dislikes;
-    }
 
-    protected void liked() {
-        likes++;
-    }
-
-    protected void disliked() {
-        dislikes++;
-    }
 
 
 

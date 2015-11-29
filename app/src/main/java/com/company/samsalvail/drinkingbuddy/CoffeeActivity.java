@@ -26,9 +26,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class BeerActivity extends Activity {
+public class CoffeeActivity extends Activity {
     private int drinkCounter = 0;
-    private String mongo_url = "https://api.mongolab.com/api/1/databases/drinkingbuddy/collections/beer?q={'id':";
+    private String mongo_url = "https://api.mongolab.com/api/1/databases/drinkingbuddy/collections/coffee?q={'id':";
     private String apiKey = "}&apiKey=q2_qGBqQCw838mVF3Pjsa9Ydhq12ZaMZ";
     private CardContainer mCardContainer2;
     private ArrayList<Drink> drinks = new ArrayList<>();
@@ -168,14 +168,14 @@ public class BeerActivity extends Activity {
                     //@Override
                     public void onLike() {
                         //Toast.makeText(BeerActivity.this, drinks.get(keeper).getTitle() + " liked", Toast.LENGTH_LONG).show();
-                        new AlertDialog.Builder(BeerActivity.this)
+                        new AlertDialog.Builder(CoffeeActivity.this)
                                 .setTitle("Extra Information!")
                                 .setMessage("Do you want to know more about this?")
                                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
                                         //send drink object
                                         Drink drinkTmp = drinks.get(keeper);
-                                        Intent intent = new Intent(BeerActivity.this, TheDrinkActivity.class);
+                                        Intent intent = new Intent(CoffeeActivity.this, TheDrinkActivity.class);
                                         intent.putExtra("drink", drinkTmp);
                                         startActivity(intent);
                                     }

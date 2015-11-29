@@ -15,34 +15,21 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="193dp" />
 
-    <ImageButton
-        android:id="@+id/no"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/selectableItemBackground"
-        android:padding="10dp"
-        android:src="@drawable/delete"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageButton
-        android:id="@+id/yes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/selectableItemBackground"
-        android:padding="10dp"
-        android:src="@drawable/checked"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <com.andtinder.view.CardContainer
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/layoutview"
         android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/yes" />
+        android:id="@+id/imageButton"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/refresh68"
+        android:onClick="onClickRefresh"
+        android:elevation="-1dp" />
 
 
 </RelativeLayout>

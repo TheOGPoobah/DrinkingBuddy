@@ -11,6 +11,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
+        android:name=".MainApplication"
         tools:replace="android:icon,android:theme" >
         <activity
             android:name=".MainActivity"
@@ -63,6 +64,38 @@
             android:label="@string/title_activity_the_drink"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".SportsActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".EnergyActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SodaActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".CoffeeActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <!-- Facebook -->
+        <activity android:name="com.facebook.FacebookActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider179701789043186"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
     </application>
 
 </manifest>

@@ -16,11 +16,12 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/title"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
 
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="200dp"
+        android:layout_height="140dp"
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/description"
@@ -31,11 +32,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/drinkPic"
-        android:layout_alignTop="@+id/description"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/title"
-        android:layout_above="@+id/postedBy"/>
+        android:layout_above="@+id/postedBy"
+        android:layout_below="@+id/title" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,4 +44,41 @@
         android:id="@+id/postedBy"
         android:layout_alignParentLeft="true"
         android:layout_above="@+id/description"/>
+
+        <LinearLayout
+            android:id="@+id/btnLoginToLike"
+            android:background="@drawable/com_facebook_button_like_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true" >
+
+            <ImageView
+                android:src="@drawable/com_facebook_button_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:text="Login"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    <com.facebook.share.widget.LikeView
+        android:id="@+id/likeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 </RelativeLayout>

@@ -119,4 +119,8 @@ public abstract class CardStackAdapter extends BaseCardStackAdapter {
 	public Context getContext() {
 		return mContext;
 	}
+
+	public void clearData() {
+		mData.clear();
+	}
 }
