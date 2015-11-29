@@ -2,12 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.company.samsalvail.drinkingbuddy" >
+<<<<<<< HEAD
+=======
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+>>>>>>> f1081e35bb70e56f80e5970355d4162b736862b6
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
+<<<<<<< HEAD
+=======
+        android:name=".MainApplication"
+>>>>>>> f1081e35bb70e56f80e5970355d4162b736862b6
         tools:replace="android:icon,android:theme" >
         <activity
             android:name=".MainActivity"
@@ -35,12 +45,12 @@
                 android:value="com.company.samsalvail.drinkingbuddy.LandingActivity" />
         </activity>
         <activity
-            android:name=".PickDrinkActivity"
-            android:label="@string/title_activity_pick_drink"
-            android:parentActivityName=".PickCategoryActivity" >
+            android:name=".BeerActivity"
+            android:label="@string/title_activity_beer"
+            android:parentActivityName=".BeerActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.company.samsalvail.drinkingbuddy.PickCategoryActivity" />
+                android:value="com.company.samsalvail.drinkingbuddy.BeerActivity" />
         </activity>
         <activity
             android:name=".AddDrinkActivity"
@@ -51,9 +61,53 @@
                 android:value="com.company.samsalvail.drinkingbuddy.LandingActivity" />
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".FavouritesActivity"
             android:label="@string/title_activity_favourites" >
         </activity>
+=======
+            android:name=".TeaActivity"
+            android:label="@string/title_activity_tea"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".TheDrinkActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SportsActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".EnergyActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SodaActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".CoffeeActivity"
+            android:label="@string/title_activity_the_drink"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <!-- Facebook -->
+        <activity android:name="com.facebook.FacebookActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider179701789043186"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+>>>>>>> f1081e35bb70e56f80e5970355d4162b736862b6
     </application>
 
 </manifest>

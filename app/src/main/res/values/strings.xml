@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">DrinkingBuddy</string>
+    <string name="app_id">179701789043186</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_landing">LandingActivity</string>
-    <string name="title_activity_pick_drink">PickDrinkActivity</string>
+    <string name="title_activity_beer">BeerActivity</string>
     <string name="title_activity_pick_category">PickCategoryActivity</string>
     <string name="title_activity_add_drink">AddDrinkActivity</string>
 
@@ -24,5 +25,10 @@
         <item name="android:shadowDy">1</item>
         <item name="android:shadowRadius">2</item>
     </style>
+<<<<<<< HEAD
     <string name="title_activity_favourites">FavouritesActivity</string>
+=======
+    <string name="title_activity_tea">TeaActivity</string>
+    <string name="title_activity_the_drink">TheDrinkActivity</string>
+>>>>>>> f1081e35bb70e56f80e5970355d4162b736862b6
 </resources>
